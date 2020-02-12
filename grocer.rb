@@ -17,7 +17,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 result = []
 counter = 0
-while counter < cart.count  do
+while counter < cart.length  do
   new_item = find_item_by_name_in_collection(cart[counter][:item], new_item)
   if new_item
     new_item[:count] += 1
